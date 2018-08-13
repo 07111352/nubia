@@ -1,0 +1,500 @@
+/*顶部区域*/
+.top{
+	width:100%;
+	height:60px;
+	background:black;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+}
+.top .top_in{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+}
+.top .top_left{
+	width:190px;
+	height:100%;
+	float:left;
+}
+.top .top_left h1{
+	width:100%;
+	height:100%;
+}
+.top .top_left h1 a{
+	display:inline-block;
+	width:100%;
+	height:55px;
+	background:url(../images/nubia-logo.png) 0 0 no-repeat;
+	position:relative;
+	top:4px;
+}
+
+.top .top_right{
+	float:right;
+	width:740px;
+	height:100%;
+}
+.top .top_nav{
+	width:550px;
+	height:100%;
+	float:left;
+}
+.top .top_nav li{
+	float:left;
+	height:100%;
+	margin-left:40px;
+}
+.top .top_nav li a{
+	color:#fff;
+	font-size:16px;
+	line-height:60px;
+}
+.top .top_right li a:hover{
+	color:#e8340e;
+}
+.top .top_login{
+	float:right;
+	width:150px;
+	height:100%;
+}
+.top .top_login li{
+	float:right;
+	line-height:60px;
+	margin-left:10px;
+}
+.top .top_login li:nth-child(3){
+	width:30px;
+	height:30px;
+	background:url(../images/nubia-syb-all.png) 0 0 no-repeat;
+	margin-top:15px;
+}
+.top .top_login li a{
+	color:#999;
+}
+/*广告区域*/
+.banner{
+	width:100%;
+	height:860px;
+	background:#f5f5f5;
+	padding-top:60px;
+}
+.banner .banner_nav_out{
+	width:100%;
+	height:120px;
+	background:#fff;
+	position:absolute;
+	z-index:99;
+}
+.banner .banner_nav{
+	width:1200px;
+	height:120px;
+	margin:0 auto;
+}
+.banner .banner_nav ul{
+	width:100%;
+	height:100%;
+	padding:0 75px;
+	box-sizing:border-box;
+	display:flex;
+	justify-content:space-around;
+}
+.banner .banner_nav ul li{
+	float:left;
+	width:120px;
+	height:100%;
+	text-align:center;
+	box-sizing:border-box;
+}
+.banner .banner_nav ul li:hover{
+	border-bottom:2px solid #e8340e;
+}
+.banner .banner_nav ul li a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+.banner .banner_nav ul li a img{
+	width:120px;
+	height:80px;
+	margin-top:10px;
+}
+.banner .banner_nav ul li a p{
+	font-size:12px;
+	color:#999;
+}
+.banner .figure{
+	width:100%;
+	height:600px;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+}
+.banner .figure img{
+	margin:0 -100%;
+}
+.banner .figure ol{
+	width:150px;
+	height:10px;
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-75px;
+	display:flex;
+	justify-content:space-around;
+}
+.banner .figure ol li{
+	width:10px;
+	height:100%;
+	margin-right:5px;
+	margin-left:5px;
+	border-radius:50%;
+	background:#999;
+	float:left;
+	border:2px solid transparent;
+	box-sizing:border-box;
+	transition:all 0.5s;
+}
+.banner .figure ol li:hover{
+	border:2px solid red;
+	background:transparent;
+	transform:scale(1.3,1.3);
+}
+.banner .video{
+	width:1200px;
+	height:250px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.banner .video ul{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.banner .video ul li{
+	float:left;
+	width:396px;
+	height:100%;
+	background:#000;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+	transition:all 0.5s;
+}
+.banner .video ul li:hover>img{
+	opacity:0.5;
+}
+.banner .video ul li:hover .video_info{
+	opacity:1;
+}
+.banner .video ul li:hover .video_info>img{
+	-webkit-animation: sport 2s .5s ease-in-out infinite; 
+	-moz-animation: sport 2s .5s ease-in-out infinite; 
+	animation: sport 2s .5s ease-in-out infinite;
+}
+@keyframes sport{
+    20%{ -webkit-transform: scale(.8); -moz-transform: scale(.8); transform: scale(.8);}
+    40%{ -webkit-transform: scale(1.2); -moz-transform: scale(1.2); transform: scale(1.2);}
+    60%{ -webkit-transform: scale(.9); -moz-transform: scale(.9); transform: scale(.9);}
+    80%{ -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1);}
+    100%{ -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1);}
+}
+.banner .video ul li>img{
+	margin:0 -100%;
+}
+.banner .video .video_info{
+	width:396px;
+	height:156px;
+	position:absolute;
+	bottom:10px;
+	opacity:0;
+}
+.banner .video .video_info img{
+	width:60px;
+	height:60px;
+}
+.banner .video .video_info h3{
+	font-size:18px;
+	color:#fff;
+	margin-top:20px;
+	margin-bottom:5px;
+}
+.banner .video .video_info p{
+	font-size:12px;
+	color:#fff;
+}
+/*内容区域*/
+.content{
+	width:100%;
+	height:1883px;
+	background:#f5f5f5;
+}
+.content .content_phone{
+	width:1200px;
+	height:1341px;
+	margin:0 auto;
+}
+.content .content_accessories{
+	width:1200px;
+	height:541px;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+.content .title{
+	width:100%;
+	height:141px;
+	text-align:center;
+}
+.content .title>h3{
+	font-size:28px;
+	color:#333;
+	padding-top:40px;
+	padding-bottom:15px;
+}
+.content .title>a{
+	font-size:12px;
+	color:#e8340e;
+}
+.content .content_phone_img li{
+	background:#fff;
+	position:relative;
+	overflow:hidden;
+}
+.content .content_phone_img li img{
+	transition:all 0.5s;
+}
+.content .content_phone_img li:nth-child(1){
+	float:left;
+	width:1200px;
+	height:395px;
+	margin-bottom:10px;
+}
+.content .content_phone_img li:nth-child(1) img{
+	margin-top:62px;
+	margin-left:-40px;
+}
+.content .content_phone_img li:nth-child(2){
+	float:left;
+	width:395px;
+	height:795px;
+	margin-right:10px;
+}
+.content .content_phone_img li:nth-child(3){
+	float:left;
+	width:795px;
+	height:389px;
+	margin-bottom:10px;
+}
+.content .content_phone_img li:nth-child(4){
+	float:left;
+	width:390px;
+	height:395px;
+	margin-right:10px;
+}
+.content .content_phone_img li:nth-child(5){
+	float:left;
+	width:395px;
+	height:395px;	
+}
+.content .content_phone_img li:nth-child(1):hover img{
+	margin-left:0px;
+}
+.content .content_phone_img li:nth-child(2):hover img{
+	transform:scale(1.1,1.1);
+}
+.content .content_phone_img li:nth-child(3):hover img{
+	transform:scale(1.1,1.1);
+}
+.content .content_phone_img li:nth-child(4):hover img{
+	transform:scale(1.1,1.1);
+}
+.content .content_phone_img li:nth-child(5):hover img{
+	transform:scale(1.1,1.1);
+}
+.content .content_accessories_img{
+	display:flex;
+	justify-content:space-between;
+}
+.content .content_accessories_img li{
+	float:left;
+	width:295px;
+	height:300px;
+	overflow:hidden;
+	background:#fff;
+}
+.content .content_accessories_img li img{
+	width:100%;
+	transition:all 0.5s;
+}
+.content .content_accessories_img li:hover img{
+	transform:scale(1.2,1.2);
+}
+.content .content_accessories_img li p{
+	font-size:12px;
+	color:#666;
+	text-align:center;
+	margin-top:20px;
+}
+.content .content_phone_img .phone_des{
+	width:200px;	
+	text-align:center;
+	position:absolute;
+	left:50%;
+	margin-left:-100px;
+	bottom:10px;
+}
+.content .content_phone_img li:nth-child(1) .phone_des{
+	left:0;
+	margin-left:1000px;
+	bottom:150px;
+}
+.content .content_phone_img .phone_des>h4{
+	font-size:18px;
+	color:#333;
+}
+.content .content_phone_img .phone_des>p{
+	font-size:12px;
+	color:#666;
+	margin-bottom:20px;
+}
+.content .content_phone_img .phone_des>span{
+	display:inline-block;
+	width:100px;
+	height:40px;
+	font-size:12px;
+	color:#666;
+	line-height:40px;
+	text-align:center;
+	border:1px solid #666;
+	border-radius:10px;
+}
+/*底部区域*/
+.footer{
+	width:1200px;
+	height:300px;
+	margin:40px auto 50px;
+	border-top:1px solid #f1f1f1;
+	box-sizing:border-box;
+}
+.footer .footer_menu{
+	width:1000px;
+	height:253px;
+	margin:0 auto;
+}
+.footer .footer_menu p{
+	width:100%;
+	height:56px;
+	line-height:56px;
+	color:#333;
+}
+.footer .footer_menu p img{
+	margin-top:21px;
+}
+.footer .footer_menu dl{
+	width:200px;
+	height:197px;
+	float:left;
+	line-height:2em;
+}
+.footer .footer_menu dl dt{
+	color:#333;
+	font-size:16px;
+}
+.footer .footer_menu dl a{
+	color:#666;
+}
+.footer .footer_menu dl a:hover{
+	color:#e8340e;
+}
+
+.footer .footer_menu .fl li{
+	float:left;
+}
+.footer .footer_menu .fl li a{
+	color:#666;
+}
+.footer .footer_copy{
+	width:1000px;
+	height:53px;
+	margin:0 auto;
+}
+.footer .footer_copy .copy_nav{
+	width:100%;
+	height:30px;
+	line-height:30px;
+}
+.footer .footer_copy .fl li{
+	float:left;
+} 
+
+.footer .footer_copy .fl li a{
+	color:#999;
+	padding: 0 10px;
+}
+.footer .footer_copy .fl li:hover a{
+	color:#333;
+}
+.footer .footer_copy .fl li:nth-child(1) a{
+	padding-left:0;
+}
+.footer .footer_copy .fl li span{
+	margin:0 2px;
+	color:#999;
+}
+.footer .footer_copy .fr{
+	width:400px;
+	height:30px;
+}
+.footer .footer_copy .fr a{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-right:12px;
+}
+.footer .footer_copy .fr a.contact_img1{
+	background:url(../images/nubia-syb-all.png) -246px 0px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img2{
+	background:url(../images/nubia-syb-all.png) -186px 0px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img3{
+	background:url(../images/nubia-syb-all.png) -126px 0px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img4{
+	background:url(../images/nubia-syb-all.png) -216px 0px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img1:hover{
+	background:url(../images/nubia-syb-all.png) -246px -30px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img2:hover{
+	background:url(../images/nubia-syb-all.png) -186px -30px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img3:hover{
+	background:url(../images/nubia-syb-all.png) -126px -30px no-repeat;
+}
+.footer .footer_copy .fr a.contact_img4:hover{
+	background:url(../images/nubia-syb-all.png) -216px -30px no-repeat;
+}
+.footer .footer_copy .fr span{
+	font-size:18px;
+	color:#999;
+	float:right;
+}
+.footer .footer_copy .copy_right{
+	width:100%;
+	height:23px;
+	line-height:23px;
+	color:#999;
+}
+.footer .footer_copy .copy_right a{
+	color:#999;
+}
+.footer .footer_copy .copy_right a:nth-child(4){
+	color:#666;
+}
+.footer .footer_copy .copy_right a img{
+	height:15px;
+	vertical-align: middle;
+}

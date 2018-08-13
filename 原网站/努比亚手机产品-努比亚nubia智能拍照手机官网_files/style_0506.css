@@ -1,0 +1,870 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none}
+a{color:#34383d;}
+input,button {border:none;outline:none;}
+/* common */
+body{color:#34383d;font:12px/1.3 "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体",sans-serif;min-width: 1170px;}
+a:hover{color: #e8380d;}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.fll{float: left;}.flr{float: right;}
+.center-block { display: block; margin-left: auto; margin-right: auto }
+.clearfix{ content: " "; display: table;clear:both; }
+.container{width: 1170px;margin:0 auto;overflow: hidden;}
+.mt30{margin-top:30px;}
+.h100{height: 100%}
+.rel{position:relative;}
+
+.chrome_adjust {font-size: 9px; -webkit-transform: scale(0.65); display: block;}
+.top-num{ display: block; color: #fff; position: absolute;    top: 0;    right: 0; background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -180px;    width: 13px;    height: 13px;   text-align: center;   line-height: 12px;}
+/* 头部登录弹出框 */
+.top-login{position: absolute;top: 54px;right: 120px; display: none; z-index: 9999;background: #fff;width: 290px;}
+.top-login .arrow{position: absolute;left: 150px;top: -20px;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -98px;width: 24px; height: 30px;z-index: 9999;}
+.top-login .top-login-con{border:1px solid #ebebeb;padding: 20px 10px;border-top: 2px solid #e8380d;}
+.top-login-con .top-login-id, .top-login-con .top-login-pwd{border: 1px solid #ececec; margin-bottom: 10px; padding: 5px; }
+.top-login-con .top-login-id input, .top-login-con .top-login-pwd input{outline: none; width: 220px; }
+.top-login-con .top-login-id em{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -160px;width: 20px;height: 20px;display: block;float: right;margin-top: 4px;}
+.top-login-con .top-login-pwd em{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -140px;width: 18px;height: 20px;display: block;float: right;margin-top: 4px;}
+.top-login-con .btn-top-login{background: #e8380d;color:#fff;font-size: 14px;text-align: center;border: none;width: 100%;height: 40px;line-height: 40px;}
+
+/* 大背景下的导航 */
+	.bg-nav{width: 150px;margin:0 auto;padding-top: 180px;}
+	.bg-nav li{color:#fff;float: left;}
+	.bg-nav a{display: block;float: left;padding: 0 10px;color:#fff;}	
+/* progress */
+.progress { overflow: hidden; height: 2px; margin-bottom: 20px; background-color: #f5f5f5; border-radius: 4px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1) }
+.progress-bar {background-color: #5cb85c;float: left; width:15%; height: 100%; font-size: 12px; line-height: 20px; color: #fff; text-align: center; background-color: #e8380d; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); -webkit-transition: width .6s ease; transition: width .6s ease }
+.progress.active .progress-bar { -webkit-animation: progress-bar-stripes 2s linear infinite; animation: progress-bar-stripes 2s linear infinite }
+
+/* table */
+table {max-width: 100%; background-color: transparent; }
+th {text-align: left; }
+.table {width: 100%; }
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+  position: relative;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {border-top: 2px solid #dddddd; }
+.table .table {background-color: #ffffff; }
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.table-bordered {border: 1px solid #dddddd; }
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  //border: 1px solid #dddddd;
+  vertical-align:middle;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+.table-striped > tbody > tr:nth-child(odd),
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #FFFFFF;
+}
+.table-hover > tbody > tr:hover ,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  float: none;
+  display: table-cell;
+}
+.table > thead > tr > .active,
+.table > tbody > tr > .active,
+.table > tfoot > tr > .active,
+.table > thead > .active > td,
+.table > tbody > .active > td,
+.table > tfoot > .active > td,
+.table > thead > .active > th,
+.table > tbody > .active > th,
+.table > tfoot > .active > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > .active:hover,
+.table-hover > tbody > .active:hover > td,
+.table-hover > tbody > .active:hover > th {
+  background-color: #e8e8e8;
+}
+.table > thead > tr > .success,
+.table > tbody > tr > .success,
+.table > tfoot > tr > .success,
+.table > thead > .success > td,
+.table > tbody > .success > td,
+.table > tfoot > .success > td,
+.table > thead > .success > th,
+.table > tbody > .success > th,
+.table > tfoot > .success > th {
+  background-color: #dff0d8;
+}
+.table-hover > tbody > tr > .success:hover,
+.table-hover > tbody > .success:hover > td,
+.table-hover > tbody > .success:hover > th {
+  background-color: #d0e9c6;
+}
+.table > thead > tr > .danger,
+.table > tbody > tr > .danger,
+.table > tfoot > tr > .danger,
+.table > thead > .danger > td,
+.table > tbody > .danger > td,
+.table > tfoot > .danger > td,
+.table > thead > .danger > th,
+.table > tbody > .danger > th,
+.table > tfoot > .danger > th {
+  background-color: #f2dede;
+}
+.table-hover > tbody > tr > .danger:hover,
+.table-hover > tbody > .danger:hover > td,
+.table-hover > tbody > .danger:hover > th {
+  background-color: #ebcccc;
+}
+.table > thead > tr > .warning,
+.table > tbody > tr > .warning,
+.table > tfoot > tr > .warning,
+.table > thead > .warning > td,
+.table > tbody > .warning > td,
+.table > tfoot > .warning > td,
+.table > thead > .warning > th,
+.table > tbody > .warning > th,
+.table > tfoot > .warning > th {
+  background-color: #fcf8e3;
+}
+.table-hover > tbody > tr > .warning:hover,
+.table-hover > tbody > .warning:hover > td,
+.table-hover > tbody > .warning:hover > th {background-color: #faf2cc;}
+
+
+/*@media only screen and (min-width:1170px) {*/
+/* header */
+	.header{width: 100%;  position: relative;} 
+	.header-top{border-top:3px solid #e8380d; border-bottom:1px solid #e7e7e7; }
+	.header-top-inner{width:1170px; margin: 0 auto; overflow: hidden; height: 40px;font-size: 12px; /* position: relative; */}
+	.header-top-inner .header-top-l {float: left;overflow: hidden;margin-top:8px;line-height: 25px;}
+	.header-top-inner .header-top-l a{display: block;float: left;margin-right: 10px;color:#bdc3c7;}
+	.header-top-inner .header-top-l li{float: left;}
+	.header-top-inner .header-top-r{float: right;overflow: hidden;line-height: 24px;margin-top: 7px;}
+	.header-top-inner .header-top-r a{display: block;float: right;margin-left: 10px;color:#bdc3c7 }
+	.header-top-inner .header-top-r li {float: left; margin-top: 2px;}	
+	.header-inner{width:1170px; margin: 0 auto;} 
+	.header-mid{}
+	.header-mid .header-logo{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -0px -220px;height: 39px;width: 211px;margin-top: 25px;float: left;}
+	.header-nav {position: relative;float: right;vertical-align: middle;height: 60px;line-height: 60px;margin-top: 20px;margin-bottom: 10px;font-size: 16px;}
+	.header-nav li{display: block;float: left;}
+	.header-nav a{display: block;float: left;margin-left:15px;padding:5px 15px;}
+	.header-nav .layoutPhone{border-top:2px solid #e8380d;width: 125px;position: absolute;top:70px;left: 65px;z-index: 999;margin-right: 0;background: #fff;}
+				  .layoutPhone li{margin-left: 0;}
+				  .layoutPhone a{color:#000;display: block;float: left;border-bottom: 1px solid #ecf0f1;width: 125px;text-align: center;height: 40px;line-height: 40px;width: 125px;margin-left: 0;padding: 0}
+				  .layoutPhone a:hover{background: #e8380d;color:#fff;}
+				  .layoutPhone .arrow{position: absolute;left: 28px;top: -9px;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -240px -460px;width: 30px; height: 28px;z-index: 9999;}
+	.header-nav .header-search{display:none;position: absolute;right: 0;top: 0px;}
+	.header-search form{border-radius: 40px;height: auto;position: relative;}
+	#u-search{float: right;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat scroll -351px -10px transparent;height: 40px;width: 40px;border: none;border: 1px solid #ccc;border-radius: 40px;line-height: 10px;margin-top: 10px;display: block; line-height: 40px\9;}
+	.btn-hd-search{position: absolute;top:9px;right:-1px;border-radius: 50%;border:none;padding:11px 13px;outline: none;background: #e8380d;color: #fff;}
+
+/* pdt-hot */
+	.pdt-hot{width: 1170px;margin:0 auto;margin-top: 20px;}
+	.pdt-hot-h1{background: #fafafa;border:1px solid #e7e7e7;height: 66px;}
+	.pdt-hot-h1 h1{font-size:30px;color:#34383d;float: left;margin-top: 13px;padding-left: 30px;} .pdt-hot-h1 small{font-size: 16px;color:#606366;}
+	.pdt-hot-h1 a{font-size: 12px; float: right;margin-top: 27px;margin-right: 15px;color: #899096;}
+	.pdt-hot-content{border:1px solid #e7e7e7;border-top:none;}
+	.pdt-hot-banner-Z9{background: url(/web/20161104215812im_/http://static.nubia.cn/images/index/z9.jpg) no-repeat;width: 1168px;height: 440px;position: relative;}
+	.pdt-hot-banner-Z9mini{background: url(/web/20161104215812im_/http://static.nubia.cn/images/index/z9_mini.jpg) no-repeat -100% 0;width: 1168px;height: 440px;position: relative;}
+	.pdt-hot-banner-Z9max{background: url(/web/20161104215812im_/http://static.nubia.cn/images/index/z9_max.jpg) no-repeat;width: 1168px;height: 440px;position: relative;}
+
+	.b-sku01,.b-sku02,.b-sku03{width: 300px; position: absolute; top:60px;font-size: 12px; line-height: 1.8; }
+	.b-sku01,.b-sku03{ left:60px;} .b-sku02{right:60px;}
+	.b-sku01 .b-sku01-title,.b-sku02 .b-sku02-title,.b-sku03 .b-sku03-title{font-size: 38px; }
+	.b-sku01 .b-sku01-info,.b-sku02 .b-sku02-info,.b-sku03 .b-sku03-info{margin-bottom: 30px; }
+	.b-sku01 .b-sku01-info li{}
+	.b-sku01 .b-sku01-price,.b-sku02 .b-sku02-price,.b-sku03 .b-sku03-price{color:#e8380d;font-size: 30px}
+	.b-sku01 .btn-groups{}
+	.b-sku01 .btn-groups .btn-cart,
+	.b-sku02 .btn-groups .btn-cart,
+	.b-sku03 .btn-groups .btn-cart{vertical-align: middle;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -0px;width: 70px;height: 32px;padding-left: 40px;display: block;float: left;line-height: 32px;}
+	.b-sku01 .btn-groups .btn-cart:hover,
+	.b-sku02 .btn-groups .btn-cart:hover,
+	.b-sku03 .btn-groups .btn-cart:hover{background-position:-140px -40px;cursor: pointer;}		
+	.b-sku01 .btn-groups .btn-view,
+	.b-sku02 .btn-groups .btn-view,
+	.b-sku03 .btn-groups .btn-view{vertical-align: middle;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -80px;width: 50px;height: 32px;padding-left: 40px;display: block;float: left;line-height: 32px;}
+	.b-sku01 .btn-groups .btn-view:hover,
+	.b-sku02 .btn-groups .btn-view:hover,
+	.b-sku03 .btn-groups .btn-view:hover{background-position:-140px -120px;cursor: pointer;}
+
+
+	.sku01{width: 300px; position: absolute; top: 60px; left: 60px; font-size: 12px; line-height: 1.8; }
+	.sku01-r{width: 300px; position: absolute; top: 60px; right: 60px; font-size: 12px; line-height: 1.8; }
+	.sku01 .sku01-title{font-size: 38px; }
+	.sku01 .sku01-info{margin-bottom: 30px; }
+	.sku01 .sku01-info li{}
+	.sku01 .sku01-price{color:#e8380d;font-size: 30px}
+	.sku01 .btn-groups{}
+	.sku01 .btn-groups .btn-cart{vertical-align: middle;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -0px;width: 70px;height: 32px;padding-left: 40px;display: block;float: left;line-height: 32px;}
+	.sku01 .btn-groups .btn-cart:hover{background-position:-140px -40px;cursor: pointer;}		
+	.sku01 .btn-groups .btn-view{vertical-align: middle;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -80px;width: 50px;height: 32px;padding-left: 40px;display: block;float: left;line-height: 32px;}
+	.sku01 .btn-groups .btn-view:hover{background-position:-140px -120px;cursor: pointer;}
+	.pdt-hot-content .pdt-hot-list {}
+	.pdt-hot-list li{float: left;border:1px solid #e7e7e7;margin-left: -1px;height: 420px;}
+	.pdt-hot-list  img{width:224px;height: 331px}
+	.pdt-hot-list .pdt-hot-thumnails{display: block;width: 291px;text-align: center;}
+	.pdt-hot-list .pdt-hot-details{width: 290px;}
+	.pdt-hot-list .pdt-hot-details .pdt-hot-details-inner{padding: 0px 50px;}
+	.pdt-hot-details-inner .sku02{line-height: 1.4; position: relative; } 
+	.sku02 .sku02-name{color:#34383d;font-size: 14px;width:150px;overflow: hidden;-ms-text-overflow: ellipsis;-moz-text-overflow: ellipsis;text-overflow;white-space: nowrap}
+	.sku02 .sku02-price{color:#e8380d;font-size: 14px}
+	.sku02 .sku02-cart{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -0px;width: 32px;height: 32px;position: absolute;right: 0;top: 10px;cursor: pointer;}
+	.sku02 .sku02-cart:hover{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -40px;}
+/* accsrroy list */
+	.acc{width: 1170px;margin:0 auto;margin-top: 20px;margin-bottom: 50px;}
+	.acc-h1{background: #fafafa;border:1px solid #e7e7e7;height: 66px;}
+	.acc-h1 h1{font-size:30px;color:#34383d;float: left;margin-top: 13px;padding-left: 30px;} .acc-h1 small{font-size: 16px;color:#606366;}
+	.acc-h1 a{font-size: 12px; float: right;margin-top: 27px;margin-right: 15px;color: #899096;}
+	.acc .acc-container{margin-top:-1px;}
+	.acc-container td{border:1px solid #e7e7e7;padding-bottom: 0;margin-bottom: 0;margin-top: 0;vertical-align: middle;}
+	.acc-container .acc-category{width: 290px;}
+	.acc-category-inner{padding: 0 33px;}
+	.acc-category  ul{overflow: hidden;border-bottom: 1px solid #d2d2d2;background: url(/web/20161104215812im_/http://static.nubia.cn/images/index/icon_acc_category.png) no-repeat 30% 20%;height: 191px;margin-top: 40px;padding-left: 6px;padding-bottom: 7px;}
+	.acc-container .acc-category li{float: left;line-height: 40px;width: 108px;height: 40px;margin-bottom: 27px;}
+	.acc-category a{color:#6e7073;display: block;padding-left: 40px;} .acc-category a:hover{color:#e8380d}
+	.acc-category .acc-all{text-align: center; display: block; margin-top: 20px; font-size: 14px;margin-bottom: 14px;padding-left: 0;}
+	.acc-category .acc-all em{padding-right: 7px;color: #e8380d}
+	.acc-category span{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -320px -20px;width: 20px;height: 17px;display: inline-block;vertical-align: middle;}
+	.acc-container .td-inner{padding: 10px 30px;}
+	.td-inner img{text-align: center;}
+/* news */
+	.news{ }
+	.news-list{width: 960px;margin:0 auto;overflow: hidden;margin-bottom: 20px;}
+	.news-list li{margin-right: 210px;text-align: center;float: left;color:#a2a3a4;}
+	.news .news-cols{float: left;margin-right:20px;width: 276px;display: block;overflow: hidden;}
+	.news-cols .news-pic{}
+	.news-cols .news-pic:hover .mask01{background: url(/web/20161104215812im_/http://static.nubia.cn/images/mask01.png) no-repeat;width: 277px;height: 172px;cursor: pointer; display: block;margin-top: -175px;position: absolute}
+	.news-cols .news-pic .mask01{display: none;}
+	.news-cols .news-pic-hover{background: url(/web/20161104215812im_/http://static.nubia.cn/images/mask01.png) no-repeat;width: 277px;height: 172px;cursor: pointer; }
+	.news-cols:hover{background: #fafafa;}
+	.news-cols:hover .news-more{color:#e8380d;}
+	.news-cols .news-info{margin-bottom: 80px;line-height: 1.5;padding: 15px;}
+	.news-info .news-title{font-size: 18px;color:#2f383d;}
+	.news-info .news-txt{font-size: 12px;color:#919293;}
+	.news-info .news-date{float: left;margin-top: 40px;}
+	.news-info .news-more{float: right;margin-top: 40px;}
+/* footer */
+	.footer{width: 100%;overflow: hidden;background: #fafafa;padding-top: 45px;}
+	.footer .footer-btns{border-bottom: 3px solid #e8380d;overflow: hidden;}
+	.footer .footer-btns ul{width: 1040px;margin:0 auto;overflow: hidden;margin-bottom: 35px;}
+	.footer .footer-btns li{float: left;margin-right: 220px;text-align: center;width: 90px;}
+	.footer .footer-btns li:hover{color:#e8380d}
+	.footer .footer-content{}
+	.footer-content .footer-content-inner{width: 1170px; margin: 0 auto;}
+	.footer-content-inner .footer-nav{overflow: hidden; padding: 30px 0; }
+	.footer-content-inner .footer-nav dl{float: left; width: 150px;height:90px; border-right: 1px solid #ccc; margin-left: 40px; line-height: 1.5; padding: 10px; }
+	.footer-content-inner .footer-nav dt{font-size: 18px;  margin-bottom: 10px; }
+	.footer-content-inner .footer-nav dd{font-size: 12px; }
+
+	.footer-content-inner .footer-nav-map{overflow: hidden; padding: 30px 0; }
+    .footer-content-inner .footer-nav-map dl{float: left; width: 120px; border-right: 1px solid #ccc; margin-left: 40px; line-height: 1.5; padding: 10px; }
+	.footer-content-inner .footer-nav-map dt{font-size: 18px;  margin-bottom: 10px; }
+	.footer-content-inner .footer-nav-map dd{font-size: 12px; }
+	.footer-nav-map .contact{float: left; margin-left: 50px;}
+	.footer-nav-map .contact li{overflow: hidden;line-height: 1.6}
+	.footer-nav-map .contact span{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat;display: block;float: left;width: 30px;height: 30px;}
+	.footer-nav-map .contact .hotline{background-position: -210px 0;}
+	.footer-nav-map .contact .email{background-position: -150px 0;}
+	.footer-nav-map .contact .address{background-position: -180px 0;}
+	.footer-content-inner .footer-nav-map dl dd .weixinm {position: absolute; display: none; top: 0px; left: 82px;}
+/* new footer */	
+	
+	.footer-content-inner .footer-nav-sec{width: 100%;border-top: 1px solid #e7e7e7;padding: 20px 0;overflow: hidden;}
+	.footer-nav-sec .footer-logo{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -0px -420px;width: 502px;height: 40px;float: left;}
+	.footer-nav-sec .footer-nav-hor{float: left;  margin-left: 170px; line-height: 40px;}
+	.footer-nav-sec .footer-nav-hor li{float: left;}
+	.footer-nav-sec .footer-nav-hor a{display: block;float: left;color: #727171;font-size: 14px;padding: 0 20px;}
+	.footer-nav-sec .footer-nav-hor a:hover{color:#e8380d;}
+	.footer-nav .contact{float: left; margin-left: 50px;}
+	.footer-nav .contact li{overflow: hidden;line-height: 1.6}
+	.footer-nav .contact span{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat;display: block;float: left;width: 30px;height: 30px;}
+	.footer-nav .contact .hotline{background-position: -210px 0;}
+	.footer-nav .contact .email{background-position: -150px 0;}
+	.footer-nav .contact .address{background-position: -180px 0;}
+	.footer-content .footer-com{background: #f3f3f3; border-top: 1px solid #e7e7e7; overflow: hidden; height: 50px; line-height: 50px; }
+	.footer-com .footer-com-inner{width: 1170px;margin:0 auto;}
+	.footer-com .com-info{float: left; }
+	.footer-com .com-certificate{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat 0 -460px;display: block;width: 230px;height: 45px;float: right;margin-top: 5px;}
+	.footer-content-inner .footer-nav dl dd .weixinm {position: absolute; display: none; top: 0px; left: 82px;}
+/* wights for rec-carousel */
+	#index-banner .item img{display: block; width: 100%; height: auto; } 
+	.rec,.select-phone{width: 100%;background: #fafafa;padding: 10px 0;overflow: hidden;height: 124px;}
+	#rec-container{margin: 0 auto;width: 1170px;}
+	#rec-container .rec-btn-pre,#rec-container .rec-btn-next{font-size: 18px;color: #606366}
+	#rec-container .owl-controls .owl-prev,#rec-container .owl-controls .owl-next{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_banner.png) no-repeat;width: 20px;height: 20px;display: block;}
+	#rec-container .owl-controls .owl-prev{background-position:-320px -340px;}
+	#rec-container .owl-controls .owl-next{background-position: -340px -340px;}
+	#rec-container .owl-controls .owl-prev{position: absolute;}
+	#rec-container .owl-controls .owl-prev{top: 45%;left: -5%;}
+	#rec-container .owl-controls .owl-next{top: 45%;right: -5%;}
+/* news-vedio */
+	.news-vedio{width: 100%; border-bottom: 1px solid #e7e7e7; margin-top: 30px; overflow: hidden; padding-bottom: 30px; }
+	.news-vedio-inner{width: 1100px;margin:0 auto;}
+	.news-vedio-cols{float: left; margin-right: 50px; text-align: center; }
+	.news-vedio-cols .vedio-pic{overflow: hidden; margin-bottom: 20px;position: relative;}
+	.news-vedio-cols .btn-play{position: absolute;top: 35%;left: 42%;display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -320px -220px; width: 60px;height: 60px;}
+	.news-vedio-cols .vedio-pic:hover .btn-play{position: absolute;top: 35%;left: 42%;display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -320px -220px; width: 60px;height: 60px;background-position:-320px -280px;cursor: pointer; }
+	.news-vedio-cols .vedio-title{font-size: 18px; color: #2f383d; margin-bottom: 10px; }
+	.news-vedio-cols .vedio-info{color: #919293; }
+/* product-recommand */
+	.container .pdt-rec{margin-bottom: 30px; border-bottom: 1px solid #e7e7e7; overflow: hidden;}
+	.container .pdt-rec .pdt-rec-cols01{position: relative;float: left;overflow: hidden;background: url(/web/20161104215812im_/http://static.nubia.cn/images/phone/pdt_rec10.jpg) no-repeat top left;width: 584px;height: 440px;}
+	.container .pdt-rec .pdt-rec-cols02{position: relative;float: left;overflow: hidden;background: url(/web/20161104215812im_/http://static.nubia.cn/images/phone/pdt_rec11.jpg) no-repeat top left;width: 584px;height: 440px;}
+	.pdt-rec-cols01 .pdt-rec-dec,
+	.pdt-rec-cols02 .pdt-rec-dec{float: right; margin-top: 50px; width: 207px;margin-right: 30px;}
+	.pdt-rec-dec .pdt-rec-title{font-size: 28px; color: #34383d; }
+	.pdt-rec-dec .progress{margin:20px 0;}
+	.pdt-rec-dec .pdt-rec-price{color: #e8380d; font-size: 30px; }
+	.pdt-rec-dec .pdt-rec-info{line-height: 1.5;}
+	.pdt-rec-dec .pdt-rec-info li{}
+	.pdt-rec-dec .pdt-rec-btns{overflow: hidden; width: 100%;position: absolute;bottom:50px; } 
+	.pdt-rec-dec .pdt-rec-btns .pdt-rec-cart{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -0px;width: 65px;height: 32px;padding-left: 35px;margin-right: 5px;vertical-align: middle;line-height: 32px;float: left;}
+	.pdt-rec-dec .pdt-rec-btns .pdt-rec-cart:hover{display: block;background-position: -140px -40px;cursor: pointer;}
+	.pdt-rec-dec .pdt-rec-btns .pdt-rec-view{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -140px -80px;width: 60px;height: 32px;float: left;padding-left: 35px;line-height: 32px;}
+	.pdt-rec-dec .pdt-rec-btns .pdt-rec-view:hover{display: block;background-position: -140px -120px;cursor: pointer;}
+/*produtc-phone*/
+              .container_bxslider{width: 100%;max-width: 1920px;margin:0 auto;}
+	.container .pdt-phone{}
+	.container .pdt-phone .pdt-phone-inner{background: #fafafa;overflow: hidden;height: 55px;line-height: 55px;}
+	.pdt-phone .pdt-phone-nav{float: left; overflow: hidden;}
+	.pdt-phone .pdt-phone-nav li{float: left; color:#899096;}
+	.pdt-phone .pdt-phone-nav a{display: block;float: left;margin: 0 20px;color:#899096;}	
+	.pdt-phone .pdt-phone-nav a:hover{color:#e8380d;}
+	.pdt-phone .pdt-phone-nav .active{color:#e8380d;}
+	.pdt-phone .pdt-pagination{float: right; overflow: hidden;margin-top: 10px;margin-right: 20px;}
+	.pdt-phone .pdt-pagination li{display:inline;}
+	.pdt-phone .pdt-pagination li a{position: relative; float: left; padding: 6px 11px; line-height: 1.42857143; text-decoration: none; color: #9ca1a6; background-color: #fff; border: 1px solid #ddd; margin-left: -1px;border-radius: 50%;margin-right: 5px;} 
+	.pdt-phone .pdt-pagination li a:hover{background: #e8380d;color:#fff;}
+	.pdt-phone .pdt-pagination li a.first:hover,.pdt-phone .pdt-pagination li a.last:hover{background: none; color:#e8380d;} 
+	.pdt-phone .pdt-pagination li a.first:hover{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -320px -360px;width: 20px;height: 20px;float: left;margin-top: 8px;color: #d1d5d8;border:none;padding:0;}
+	.pdt-phone .pdt-pagination li a.last:hover{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -340px -360px;width: 20px;height: 20px;float: left;margin-top: 10px;margin-left: 5px;border:none;padding:0;}
+	.pdt-phone .pdt-hot-list li{margin-top:-1px;}
+	.pdt-pagination li{float: left;}
+	.pdt-phone .pdt-pagination .first{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -320px -360px;width: 20px;height: 20px;float: left;margin-top: 8px;color: #d1d5d8;border:none;padding:0;}
+	.pdt-phone .pdt-pagination .last{display: block;background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -340px -360px;width: 20px;height: 20px;float: left;margin-top: 10px;margin-left: 5px;border:none;padding:0;}
+	.pdt-phone .pdt-pagination .active{background: #e8380d;color:#fff;}
+/* 配件聚合页 */
+.bg-acc{width: 100%;background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_acc.jpg) no-repeat center;height: 299px;}
+.acc-rec{background: #fafafa; width: 100%; }
+.container .acc-con{border:1px solid #e7e7e7;overflow: hidden;background: #fff;}
+.acc-con .acc-con-col{float: left;padding: 15px 30px;width: 330px;}
+.acc-con-col .sku03{overflow: hidden;position: absolute;}
+.acc-con-col .sku03 .sku-name{float: left;font-size: 18px;color:#34383d;}
+.acc-con-col .sku03 .sku-price{float: right;font-size: 16px;color:#e8380d;}
+.acc-con-col .btn-gobuy02{display: block;border-radius: 30px;width: 120px;height:35px;line-height: 35px;background: #e8380d;text-align: center;margin: 0 auto;color:#fff;margin-top: 20px;border: 1px solid #e8380d;}
+.acc-con-col .btn-gobuy02:hover{background: #fff;color:#e8380d;border:1px solid #e8380d;}
+.container .acc-filter{} 
+.acc-filter b{font-size: #899096;float: left;}
+.acc-filter a.active{color:#e8380d;}
+.acc-filter ul{overflow: hidden; float: left; }
+.acc-filter .acc-filter-other ul{overflow: hidden; float: left; margin-left: 36px; }
+.acc-filter-other a{color:#899096; }
+.acc-filter li{float: left;padding: 0 20px;border-right: 1px solid #34383d;}
+.acc-filter .acc-filter-c,
+.acc-filter .acc-filter-ph,
+.acc-filter .acc-filter-other{
+    margin-top: 10px;
+    overflow: hidden;
+    border-top: 1px solid #e7e7e7;
+    padding-top: 15px;}
+.acc-filter .acc-filter-other{margin-top: 13px; background: #fafafa; height: 30px; border-top: none; }
+.filter-none{color: #999; font-size: 20px; padding: 65px; padding-left: 0; }
+.acc-content li{float: left;border: 1px solid #e7e7e7;width: 291px;margin-top: -1px;margin-left: -1px;}
+.acc-content .acc-col{padding: 40px; }
+.acc-col .sku02{overflow: hidden; position: relative; } 
+.acc-col .sku02 .sku02-cart{top: 26px;}
+
+/* 详情页面增强套装版 */
+.pdtby-details .pdtby-dec{
+	line-height: 1.8;
+	margin-bottom:40px;
+	width: 520px;
+	height: 105px;
+}
+.pdtby-details .pdtby-suit .pdtby-btn-suite{padding: 8px 18px;display: block; float: left; color:#fff; border:1px solid #fff;background: none;border-radius: 4px;font-size: 14px}
+.pdtby-details .pdtby-suit-con{overflow: hidden;margin-bottom: 40px;}
+.pdtby-details .pdtby-suit-con .pdtby-suit{float: left;margin-left: 30px;width: 240px;}
+.pdtby-btn-groups .btn-gobuy-zt{font-size: 14px;width: 160px;height: 35px;float: left;cursor: pointer;border: 1px solid #fff;border-radius: 24px;text-align: center;line-height: 35px;}
+.pdtby-btn-groups .btn-gobuy-zt:hover{background: #e8380d;color:#fff;}
+
+
+/* 购物详细页 */
+/*
+.pdtby{background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_pdtby.jpg) no-repeat center;width: 100%;height: 576px;}
+.pdtby .pdtby-inner{width: 1170px;margin: 0 auto;position: relative;overflow: hidden;height: 580px;}
+.pdtby-inner .booth{float: left; }*/
+.pdtby{background-color:#efefef;}
+.pdtby .pdtby-inner{width: 1170px;margin: 0 auto;position: relative;overflow: hidden;height: 808px;}
+.pdtby-inner .booth{float: left; }
+.gallery .booth{padding: 20px 0; text-align: center; cursor: pointer; overflow: hidden; }
+.booth img{width: 576px;height: 576px}
+/*.gallery{position: absolute;bottom: 11px;right: 30px;}*/
+.gallery {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+.tabs { width:540px; height: 100px; overflow:hidden;}
+.lunbo{ position:relative;}
+.leftbutton{ cursor:pointer;position:absolute;top:12px;left:-33px;display:none;}
+.rightbutton{ cursor:pointer;position:absolute;top:12px;left:539px;display:none;}
+.thumb{ width:2000px;}
+.gallery .thumb li{cursor: pointer; border:1px solid #e2e2e2; width: 80px; margin-right: 30px; display: block; float: left; text-align: center; }
+.gallery .thumb li a{display: block; padding-top: 5px; }
+/*.gallery .thumb li.selected a{background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNBNTkxQjBERkFBRDExRTJBMjA3QUMxMjBBNjE4Rjk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjNBNTkxQjBFRkFBRDExRTJBMjA3QUMxMjBBNjE4Rjk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M0E1OTFCMEJGQUFEMTFFMkEyMDdBQzEyMEE2MThGOTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0E1OTFCMENGQUFEMTFFMkEyMDdBQzEyMEE2MThGOTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6XX0dmAAAASElEQVR42qzMWQoAIBAC0Dr50MmNIIpocZYE8UdeBpAUkb6FPhtIKpgR9rdgKtSKUdSDPVEvdkUj2BGNYhv6A1vQX9hAqwADAIZbgJXIytdRAAAAAElFTkSuQmCC'); background: #FFFFFF; }*/
+.gallery .thumb li.selected a{border:1px solid #eb4f2c;}
+/*.gallery .thumb li.selected{background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNBNTkxQjBERkFBRDExRTJBMjA3QUMxMjBBNjE4Rjk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjNBNTkxQjBFRkFBRDExRTJBMjA3QUMxMjBBNjE4Rjk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M0E1OTFCMEJGQUFEMTFFMkEyMDdBQzEyMEE2MThGOTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0E1OTFCMENGQUFEMTFFMkEyMDdBQzEyMEE2MThGOTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6XX0dmAAAASElEQVR42qzMWQoAIBAC0Dr50MmNIIpocZYE8UdeBpAUkb6FPhtIKpgR9rdgKtSKUdSDPVEvdkUj2BGNYhv6A1vQX9hAqwADAIZbgJXIytdRAAAAAElFTkSuQmCC'); background-repeat: no-repeat; background-position:50% 0; }*/
+.gallery .thumb img{width: 80px;height: 80px}
+.pdtby-inner .pdtby-details{float: left; margin-left: 40px; margin-top: 60px; color: #fff; line-height: 1.5; width: 520px;}
+
+.pdtby-details .pdtby-title{font-size: 50px; color: #000;border-bottom:1px solid #cecece; padding-bottom: 20px;}
+.pdtby-details .pdtby-dec{  line-height: 1.8; margin-bottom:40px;}
+.pdtby-details .pdtby-price{font-size: 42px; margin-bottom: 10px;color:#eb4f2c;}
+.pdtby-details .pdtby-color{overflow: hidden; margin-bottom: 15px;}
+.pdtby-details .pdtby-color ul{}
+.pdtby-details .pdtby-color li{display: inline-block; margin-right: 2px; }
+.pdtby-details .pdtby-color li.selected{border:1px solid #000;border-radius: 50%}
+.pdtby-details .pdtby-color a{padding: 10px;display: block; float: left; padding-left: 10px;color:#fff; border:1px solid #fff;border-radius: 50%}
+
+
+
+
+/*for phone*/
+.pdtby-details .pdtby-phone-color{overflow: hidden; margin-bottom: 15px;}
+.pdtby-details .pdtby-phone-color ul{}
+.pdtby-details .pdtby-phone-color li{display: inline-block; margin-right: 2px; }
+.pdtby-details .pdtby-phone-color li.selected{}
+.pdtby-details .pdtby-phone-color a{padding: 10px;display: block; float: left; padding-left: 10px;color:#fff; border:1px solid #fff;background: none;border-radius: 4px}
+.pdtby-details .pdtby-phone-color a.disabled{cursor: not-allowed;border:1px dashed #ccc;}
+.pdtby-details .pdtby-phone-color .selected a{border:1px solid #fff;overflow: hidden;display: inline-block;background: #e8380d;} 
+
+
+
+.white{background: #fff}
+.orange{background: #e74c3c}
+.green{background: #00a847}
+.blue{background: #3498db}
+.black{background: #000}
+.cyan{background: rgb(112,134,142)}
+.pink{background: rgb(228,189,218)}
+.yellow{background:rgb(233,217,1)}
+.red{background:rgb(255,53,62)}
+.lime{background:rgb(187,217,59)}
+.pdtby-details .pdtby-btn-groups{overflow: hidden;margin-top: 25px; } 
+.btn-cnts{border: 1px solid #e0d7e3; float: left; border-radius: 4px;}
+
+.pdt-cut,.pdt-add{color: #e0d7e3; font-size: 16px;padding: 5px;} 
+.pdt-cut:hover, .pdt-add:hover{color:#e0d7e3;}
+.table-cut,.table-add{color: #606366; font-size: 16px;padding: 5px;} 
+#goods-cnt{} 
+.pdt-cnt{height: 25px; background: transparent; border-left: 1px solid #ccc; border-right: 1px solid #ccc; width: 50px; text-align: center; color: #fff;}
+.cart-cnt{height: 25px; background: transparent; border-left: 1px solid #ccc; border-right: 1px solid #ccc; width: 50px; text-align: center; color: #899096;}
+.pdtby-btn-groups .btn-gobuy{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_btns.png) no-repeat -0 -120px;width: 130px;height: 28px;float: left;cursor: pointer;margin-left: 40px;}
+.pdtby-btn-groups .btn-gobuy:hover{background-position: 0 -160px;}
+
+.pdtby-btn-groups .btn-stockout{background: url(/web/20161104215812im_/http://static.nubia.cn/images/stockout_icon_btns.png) no-repeat 0 -33px;width: 130px;height: 28px;float: left;cursor: pointer;margin-left: 40px;}
+.pdtby-btn-groups .btn-stockout:hover{background-position: 0 0px;}
+
+.pdtby-btn-groups .btn-gobuy-qhdj {float:left;margin-left:40px}
+.pdtby-btn-groups .btn-gobuy-qhdj a {
+    background-color: #EF32CE;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: block;
+    margin-left: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 130px;}
+.pdtby-btn-groups .btn-gobuy-qhdj a:hover {background-color:#E8380D}
+.parameter{background: #fff;padding-bottom: 50px}
+.parameter table{width: 1170px;margin: 0 auto}
+.parameter tr{padding: 30px 0;}
+.parameter th{font-size: 18px;text-align: center;width: 220px;color: #000;vertical-align: middle;display: table-cell;font-weight: bold;border-bottom: 1px solid #e6e6e6}
+.parameter td{padding: 30px 0;border-bottom: 1px solid #e6e6e6}
+.parameter th.last, .parameter td.last{border:none;}
+.parameter_box{border-bottom: 1px solid #9bcab4;padding: 30px 0;width: 1180px;margin: 0 auto;}
+.parameter dl{height: 28px}
+.parameter dl dt{color: #2b2b2b;font-size: 14px;width: 100px;padding-left:70px;font-weight: bold;float: left;}
+.parameter dl dd{display: inline;}
+.parameter .divide{width: 70px;background: #fff;border:none;}
+
+/* 购物车页 */
+.bg-cart{background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_cart.jpg) no-repeat center;width: 100%;height: 299px;}
+.cart-con{width: 1170px;margin:0 auto;margin-top: 40px;margin-bottom: 60px;}
+.cart-con .cart-h1{font-size: 14px;color:#606366;margin-bottom: 20px;}
+.cart-con .cart-thead{background:#fafafa;font-size: 14px;}
+.sum{color:#000;}
+.sum p{color:#999;}
+
+.cart-rec{}
+.cart-rec .cart-rec-h1{
+    background: #fafafa;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+.cart-rec .pdt-hot-list li{border:none;}
+.cart-con .cart-close{width: 20px; height: 20px; border:none; border-radius: 50%; -moz-border-radius: 50%; color: #838383; text-align: center; text-shadow: none; font-weight: bold; font-size: 10px; font-family: "arial", sans-serif; line-height: 20px; line-height: 19px; cursor: pointer; font-size: 18px;display: block;margin-left: 8px;}
+.cart-con .cart-close:hover{background-color: #e8380d; color: #fff;}
+
+/* 登录页 */
+	.bg-login{background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_cart.jpg) no-repeat center;height: 299px;width: 100%;}
+	.login{width: 1170px; margin: 0 auto; padding: 120px 0; overflow: hidden;}
+	.login .login-l{margin-left: 240px; float: left;border-right: 1px solid #e5e5e5;padding-right: 100px;} 
+	.login .login-r{float: right; margin-right: 290px; }
+	.login-l form{}
+	.login-l .login-h1{font-size: 18px; color: #2f383d; margin-bottom: 20px; }
+	.login-l .login-id, .login-l .login-pwd{overflow: hidden; border: 1px solid #e1e4e6;  width: 330px; line-height: 23px; margin-bottom: 10px;}
+	.login-l .login-id input,.login-l .login-pwd input{width: 290px; height: 30px;padding-left: 10px;line-height: 30px \9;font-size: 12px;}
+	.login-l .login-id .icon-id{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -220px -240px;display: block;width: 20px;height: 20px;float: right;margin-top: 8px;margin-right: 5px;}
+	.login-l .login-pwd{}
+	.login-l .login-pwd .icon-pwd{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -240px -240px;display: block;width: 20px;height: 20px;float: right;margin-top: 5px;margin-right: 3px;}
+	.login-l .login-rem{margin-bottom: 20px; }
+	.login-l .login-rem input{}
+	.login-l .btn-login{background: #e8380d; border: none; width: 330px; height: 40px; border-radius: 20px; color: #fff; cursor: pointer;}
+	.login-r .login-step{}
+	.login-step dl{margin-bottom: 30px; }
+	.login-step dt{color: #363636; font-size: 14px; margin-left: 30px; }
+	.login-step dt,.login-step dd{margin-left:35px;margin-bottom: 5px;}
+	.login-step dd{color: #e8380d; }
+	.login-step a{color:#e8380d;}.login-step a:hover{text-decoration: underline;}
+	.login-step span{float: left;margin-top: 5px;}
+/* 服务页 */
+	.bg-services{background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_services.jpg) no-repeat center;height: 299px;width: 100%; }
+#e8380d
+/* 专卖店页面 */
+	.bg-store{background: url(/web/20161104215812im_/http://static.nubia.cn/images/bg_store.jpg) no-repeat center;width: 100%;height: 299px;}
+	.store {overflow: hidden;}
+	.store-h1{background: #fafafa;font-size: 30px;color:#34383d;padding:5px;margin-bottom: 30px;}
+	.store-list{float: left;overflow: hidden;margin-bottom: 85px; margin-top:55px;}
+	.store-list li{display:none;border-bottom: 1px solid #e7e7e7;width: 360px;}
+	.st-col{min-height: 30px;overflow-y: hidden;line-height:30px;padding: 5px 0;}
+	.Province{border-bottom: 1px solid #e7e7e7;width: 360px;height: 40px;}
+	#province{font-family:"微软雅黑";font-size:20px;}
+	.zwtyd{margin-left: 40px;margin-top: 24px;font-family: 微软雅黑;font-size: 16px;}
+	.arrow{color:#e8380d;font-family:'新宋体';font-size:20px;margin-left:22px;}
+	.store-list .st-col p{display:none;}
+	.exchange{width: 85px; display:block; height: 20px; line-height: 20px; padding: 0 8px;  border-radius: 2px; color: #fff; font-size: 12px; background-color: #e8380d; font-weight: normal;}
+	.st-col .st-dec{font-size: 12px;margin-left: 22px;}
+	.st-col .st-dec .progress{margin-bottom: 10px}
+	.st-col .st-dec p{color:#6e7073;line-height: 1.8}
+	.st-col .st-name{/*color:#e8380d;*/font-size: 16px;margin-bottom: 10px;display: block;}
+	.store-news{overflow: hidden; } 
+	.store-news .st-list{}
+	.store-news .st-list li{float: left;width: 240px;margin-right: 50px;}
+	.store-news .st-list .dec{background: #fafafa;padding: 18px;}
+	.store-news .st-list .dec h1{font-size: 18px;color:#2f383d;margin-bottom: 15px;text-align: center;}
+	.store-news .st-list .dec p{font-size: 12px;color:#919293;line-height: 1.8;}
+/* 专卖店详细页 */
+	.container .store-con{overflow: hidden;margin-bottom: 65px;}
+	.store-info{float: left; width: 430px; margin-left: 10px; font-size: 14px; }
+	#store-banner{width: 708px;float: left;}
+	.store-info .store-name{font-size: 20px; color: #34383d; margin-bottom: 20px; }
+	.store-info dl{border-bottom: 1px solid #ecf0f1; line-height: 35px; overflow: hidden; }
+	.store-info dd{} 
+	.store-info .support-list{line-height: 1.2;}
+	.store-info .support-list dd{float: left; padding-left: 21px; margin-right: 10px; background: url(/web/20161104215812im_/http://static.nubia.cn/images/server_list.png) no-repeat; margin: 10px; } 
+	#bd-map{
+	    display: block;
+	    background: #e8380d;
+	    width: 90px;
+	    color: #fff;
+	    height: 30px;
+	    border: 1px solid #e8380d;
+	    text-align: center;
+	    line-height: 30px;
+	    border-radius: 30px;
+	    margin-top: 10px;
+	    margin-bottom: 30px;
+	}
+	#map_back{
+	    display: block;
+	    background: #e8380d;
+	    width: 90px;
+	    color: #fff;
+	    height: 30px;
+	    border: 1px solid #e8380d;
+	    text-align: center;
+	    line-height: 30px;
+	    border-radius: 30px;
+	    margin-top: 10px;
+	    margin-bottom: 30px;
+	}
+
+/* 弹出框 */
+#facebox {padding-top: 10px;}
+#facebox .popup {position: relative; width:100%; }
+#facebox table {margin: auto; border-collapse: collapse; width: 93%; color: #999; }
+#facebox .dialog-content .title {font-size: 14px; margin: 0px; padding-bottom: 6px; padding-top: 15px; border-bottom: 1px solid #e8380d; background: #fff; border-radius: 6px 6px 0px 0px; }
+#facebox .dialog-content .title span {display: block; padding: 4px 0px 5px; color:#999; background: #fff; }
+#facebox .loading {text-align: center; height: 32px; background: url(https://web.archive.org/web/20161104215812im_/http://thumb.ztehn.com/image/53341561debb12415c89644c.gif) no-repeat center; }
+#facebox .image {text-align: center; }
+#facebox a.close {background:url(https://web.archive.org/web/20161104215812im_/http://thumb.ztehn.com/image/53341561debb12415c89644d.gif); width:66px; height:22px; display:block; float:right; }
+#facebox img {border: 0; }
+#facebox td {padding:0; }
+#facebox .content{padding: 15px; padding-left: 0px; }
+#facebox .footer {background: none; border-top: 1px solid #ddd; border-bottom: none !important; /*margin-top: 30px;*/ padding-top: 14px; margin-bottom: 0; border-radius: 0px 0px 6px 6px; text-align: right; overflow: hidden; padding-bottom: 20px}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {height: 10px; width: 10px; overflow: hidden; padding: 0; } 
+#facebox .footer input {width: 113px; height: 33px; border: 1px solid #e8380d; background: #fff; color: #e8380d !important; border-radius: 3px; text-align: center; line-height: 33px; cursor: pointer; }
+#facebox .dialog-content input.view-cart {margin-left: 10px; background: #e8380d; text-indent: 0 !important; color: #fff !important; }
+#facebox .dialog-content .title span cite {
+	top: 9px;
+	right: 12px;
+	width: 20px;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: "arial", sans-serif;
+	text-align: center;
+	color: #c1bcbc;
+	background: #e8e8e8 !important;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	border-radius: 15px;
+	padding: 4px 0;
+	font-weight: bold;
+	cursor: pointer;
+	text-shadow: none;
+	display: block;
+	margin:0;
+	text-indent:0;
+	height:auto;
+	position: absolute;
+}
+#facebox .dialog-content .title span cite:hover {color: #fff; background: #e8380d; }
+
+.tab-content  .tab-pane {display: none; }
+.tab-content  .tab-pane {display: none; }
+.tab-content  .active {display: block; }
+.tab-content img{vertical-align: middle}
+.nav-tabs .dropdown-menu {margin-top: -1px; border-top-right-radius: 0; border-top-left-radius: 0; }
+.pdt-content{margin-top:55px;}
+.pdt-content .pdt-content-nav{width: 100%;border-top: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;z-index: 999;background: #fff;}
+.pdt-content #myTab{margin: 0 auto;width: 520px;overflow: hidden;}
+#myTab li{float: left;padding: 20px 0;margin: 0 30px;padding-left: 16px;}
+#myTab .active{background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -56px;padding-left: 16px;}
+#myTab .active a{color:#e8380d;}
+
+
+
+.u{display: inline-block;background:url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat;width: 30px;height: 30px;}
+.i{display: block;background:url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat;width: 80px;height: 80px;cursor: pointer;margin-bottom: 10px;}
+.f{display: block;background:url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat;width: 73px;height: 73px;cursor: pointer;margin: 0 auto;margin-bottom: 10px;}
+.u0000{background-position:  -0px -0px} .u0000:hover{background-position:  -0px -30px}
+.u0100{background-position:-30px -0px} .u0100:hover{background-position:-30px -30px}
+.u0200{background-position:-60px -0px} .u0200:hover{background-position:-60px -30px}
+.u0300{background-position:-90px -0px} .u0300:hover{background-position:-90px -30px}
+.u0400{background-position:  -120px -0px;} .u0400:hover{background-position:  -120px -30px}
+.u1619{background-position:  -320px -380px;}
+.u1819{background-position:  -360px -380px;}
+.u2019{background-position:  -400px -380px;}
+
+
+.f0000{background-position:  -0px -60px;}.hk-f0000:hover .f0000{background-position:  -0px -140px;}
+.f0400{background-position:  -80px -60px;} .hk-f0400:hover .f0400{background-position:  -80px -140px;}
+.f0800{background-position:  -160px -60px;} .hk-f0800:hover .f0800{background-position:  -160px -140px;}
+.f1200{background-position:  -240px -60px;} .hk-f1200:hover .f1200{background-position:  -240px -140px;}
+
+
+.news-list .i0000{background-position: 0px -260px;}
+.news-list .hk0000:hover .i0000{ background-position: -0px -340px}
+.news-list .i0400{background-position: -80px -260px;}
+.news-list .hk0400:hover .i0400{background-position: -80px -340px}
+.news-list .hk0400:hover .i0400{background-position: -80px -340px}
+.news-list .i0800{background-position: -160px -260px}
+.news-list .hk0800:hover .i0800{background-position: -160px -340px}
+.news-list .i1200{background-position: -240px -260px}
+.news-list .hk1200:hover .i1200{background-position: -240px -340px}
+
+.btn-cart-groups{border:1px solid #e7e7e7;overflow: hidden;text-align: center;height: 70px;border-top: none;width: 1168px;margin: 0 auto;}
+.btn-cart-groups .btn-cart-groups-inner{width: 300px;margin:0 auto;overflow: hidden;margin-top: 15px;}
+.pay-continue{display: block;border-radius: 15px;padding: 10px;color: #e8380d;background: #fff;float: left;width: 100px;border-radius: 20px;border: 1px solid #e8380d;}
+.go-pay{display: block;border-radius: 15px;padding: 10px;color:#fff;background: #e8380d;float: left;margin-left: 50px;width: 100px;border-radius: 20px;}
+.pay-continue:hover{color:#e8380d}
+.go-pay:hover{color: #fff}
+.sum{color:#e8380d;}
+.header-top-inner .header-top-r a:hover{color: #e8380d;}
+a.active {color: #e8380d !important;}
+
+/* 滚动到顶部按钮 */
+#back-to-top{position:fixed; display:block; bottom:0px; right:0; z-index: 9999}
+#back-to-top a{
+	display: block;
+	background:#f0f0f0;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	-moz-transition:color 1s;
+  	-webkit-transition:color 1s;
+   	-o-transition:color 1s;
+   	margin-bottom: 2px;
+}
+#back-to-top a:hover{
+	background: #fafafa;
+}
+#back-to-top #top-cart{
+	background-position: 0 0;
+	position: relative;
+}
+#back-to-top #top-cart .top-cart-num{
+	display: block; 
+	color: #fff; 
+	position: absolute; top: 0; right: 0; 
+	background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -180px; 
+	width: 13px; height: 13px; 
+	text-align: center; 
+	line-height: 12px;
+}
+.top-num2 { 
+	display: block; 
+	color: #fff; 
+	position: absolute; 
+	top: 9px; right: 6px; 
+	background: url(/web/20161104215812im_/http://static.nubia.cn/images/icon_common.png) no-repeat -360px -180px; 
+	width: 13px; height: 13px; 
+	text-align: center; line-height: 12px;
+ }
+#back-to-top .top-bg{
+	background: url(/web/20161104215812im_/http://static.nubia.cn/images/back_to_top.png) no-repeat;
+	display: block;
+	width: 50px;
+	height: 50px
+}
+.top-weixin{
+	position: absolute;
+	top:30px;
+	left:-110px;
+	display: none;
+}
+#back-to-top .top-cart-ico{
+	background-position:13px 12px;
+}
+#back-to-top .top-chat-ico{
+	background-position:13px -39px;
+}
+#back-to-top .top-service-ico{
+	background-position: 13px -88px;
+}
+#back-to-top .top-ico{
+	background-position:13px -133px;
+}
+#back-to-top .top-ico:hover{
+	background-position:13px -183px;
+}
+/*
+     FILE ARCHIVED ON 21:58:12 Nov 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:43:18 Aug 09, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 207.707 (3)
+  esindex: 0.005
+  captures_list: 220.252
+  CDXLines.iter: 8.608 (3)
+  PetaboxLoader3.datanode: 86.766 (4)
+  exclusion.robots: 0.128
+  exclusion.robots.policy: 0.118
+  RedisCDXSource: 1.625
+  PetaboxLoader3.resolve: 262.698 (3)
+  load_resource: 150.506
+*/

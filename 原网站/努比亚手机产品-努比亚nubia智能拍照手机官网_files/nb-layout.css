@@ -1,0 +1,284 @@
+/*
+Powered by uimix.com;
+date:2014-12-30;
+*/
+
+
+#nb-contain{}
+
+/* main promos */
+.nb-m-promos{width: 100%; height: 200px; margin: auto; position: relative; overflow: hidden; z-index: 2; background: #fff; border-bottom: #eee 2px solid; border-top: #eee 2px solid; }
+/*.nb-m-promos{width: 100%; height: 200px; margin: auto; position: relative; overflow: hidden; z-index: 2; background: #fff; -webkit-box-shadow: 0 -2px 2px rgba(0,0,0,.05),0 2px 2px rgba(0,0,0,.05); -moz-box-shadow: 0 -2px 2px rgba(0,0,0,.05),0 2px 2px rgba(0,0,0,.05); -ms-box-shadow: 0 -2px 2px rgba(0,0,0,.05),0 2px 2px rgba(0,0,0,.05); box-shadow: 0 -2px 2px rgba(0,0,0,.05),0 2px 2px rgba(0,0,0,.05); }*/
+.nb-m-promos ul{display: block; margin: 0 2%;}
+.nb-m-promos.big ul{display: block; margin: 0 6%;}
+
+.nb-m-promos ul li{width: 25%; height: 200px; overflow: hidden; float: left; position: relative;}
+.nb-m-promos ul li a{width: 100%; height: 100%; display: block; overflow: hidden; text-align: center; position: relative;}
+.nb-m-promos ul li a:before1{width: 100%; height: 100%; content: ''; position: absolute; left: 0; bottom: 0; background: url(/web/20161206060331im_/http://static.nubia.cn/index/images/nb-m-promos-hover.png) bottom center no-repeat; opacity: 0; display/*\**/: none \9; -webkit-transition: opacity .5s ease-in-out; -moz-transition: opacity .5s ease-in-out; -ms-transition: opacity .5s ease-in-out; transition: opacity .5s ease-in-out; z-index: 3;}
+.nb-m-promos ul li a:hover:before1{opacity: 1;}
+.nb-m-promos ul li a i{-webkit-transition: -webkit-transform 1s ease; -moz-transition: -moz-transform 1s ease; transition: transform 1s ease;}
+.nb-m-promos ul li a:hover i{-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+.nb-m-promos ul li a h2{display: block; font-size: 16px; color: #333333; position: relative; z-index: 2; margin-top: 20px;}
+.nb-m-promos ul li a p{display: block; font-size: 12px; color: #999999; position: relative; z-index: 2; padding-top: 5px;}
+.nb-m-promos ul li i{width: 3000px; height: 200px; overflow: hidden; position: absolute; top: 0; left: 50%; margin-left: -1500px; text-align: center; z-index: 1; background-position: center center; background-repeat: no-repeat; background-size: 477px 200px; z-index: 1;}
+.nb-m-promos ul li i img{height: 200px;}
+
+
+
+
+
+
+
+
+
+
+
+/*product*/
+#nubia-wrap #nb-contain{background-color: #f5f5f5;}
+.nb-product{width: 100%; padding-top: 60px;}
+.nb-pro-nav{width: 100%; height: 120px; margin: auto; border-top: 1px #e6e6e6 solid; font-size: 12px; position: absolute; background: #fff; background: rgba(255,255,255,.95); top: 60px; left: 0; z-index: 2;}
+.nb-pro-nav ul{width: 1050px; height: 110px; margin: auto;padding-top: 10px;}
+.nb-pro-nav li{float: left; width: 150px; text-align: center;}
+.nb-pro-nav li a{display: inline-block; height: 108px; border-bottom: 2px transparent solid; -webkit-transition: border .3s ease;-moz-transition: border .3s ease;transition: border .3s ease;}
+.nb-pro-nav li a p{font-size: 12px; color: #999999; padding-top: 4px; }
+.nb-pro-nav li a .figure{width: 100%; height: 80px;}
+.nb-pro-nav li a:hover{ border-color: #e8340e;}
+
+#nb-pro-high{width: 100%; height: 600px; overflow: hidden; position: relative; z-index: 1;}
+#nb-pro-high li{width: 100%; height: 600px; position: absolute; top: 0; left: 0;}
+#nb-pro-high li a{display: block;}
+#nb-pro-high li a .h-stage{width: 1200px; height: 600px; margin: auto; position: relative;}
+#nb-pro-high .nb-h-switch{width: 100%; position: absolute; bottom: 20px; left: 0; text-align: center; z-index: 9;}
+#nb-pro-high .nb-h-switch a{width: 20px; height: 20px; display: inline-block; vertical-align: middle; overflow: hidden; margin: 0 5px; position: relative;}
+#nb-pro-high .nb-h-switch a b{width: 8px; height: 8px; overflow: hidden; background: #999; position: relative;  /*top: 5px; */ border: 2px transparent solid; display: inline-block; vertical-align: middle; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; -webkit-transform: scale(.6); -moz-transform: scale(.6); -ms-transform: scale(.6); transform: scale(.6); -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; transition: all .3s ease; }
+#nb-pro-high .nb-h-switch a:hover b,#nb-pro-high .nb-h-switch a.current b{background: transparent; border-color: #e8340e; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+
+
+/*-products 轮播-*/
+.high-pro-b1{background-color: #fcf3e4;}
+.high-pro-b1 a .figure{position: absolute; top: 0; left: 0; width: 100%; height: 600px;}
+.high-pro-b1 a .figure img{position: absolute; top: 0; left: 50%; width: 1920px; height: 600px; margin-left: -960px;}
+
+.high-pro-b2{background-color: #ebebeb;}
+.high-pro-b2 a .figure{position: absolute; top: 0; left: 0; width: 100%; height: 600px;}
+.high-pro-b2 a .figure img{position: absolute; top: 0; left: 50%; width: 1920px; height: 600px; margin-left: -960px;}
+
+.high-pro-b3{background-color: #ecdecc;}
+.high-pro-b3 a .figure{position: absolute; top: 0; left: 0; width: 100%; height: 600px;}
+.high-pro-b3 a .figure img{position: absolute; top: 0; left: 50%; width: 1920px; height: 600px; margin-left: -960px;}
+/*--*/
+
+
+/*-access 轮播-*/
+.high-access-t1{background-color: #e1e1e1;}
+.high-access-t1 a .figure{position: absolute; top: 0; right: -150px; width: 920px; height: 600px; z-index: 1;}
+.high-access-t1 a .title{position: absolute; top: 250px; left: 90px; width: 460px; height: 260px; overflow: hidden; z-index: 2;}
+
+
+.high-access-t2{background-color: #fb7576;}
+.high-access-t2 a .figure{position: absolute; top: 0; right: 20px; width: 678px; height: 600px; z-index: 1;}
+.high-access-t2 a .title{position: absolute; top: 250px; left: 90px; width: 460px; height: 260px; overflow: hidden; z-index: 2;}
+/*--*/
+
+
+
+
+#nb-pro-content{width: 100%; height: auto; overflow: hidden; position: relative;}
+.nb-proc-promos{width: 1200px; height: 250px; padding-top: 7px; margin: auto;}
+.nb-proc-promos ul{width: 100%; height: 250px;display: table;}
+.nb-proc-promos ul li{display: table-cell; height: 250px; width: 33%;text-align: center; overflow: hidden; float: left; position: relative;}
+.nb-proc-promos ul li.nb-pv-i-2{margin: 0 .5%;}
+.nb-proc-promos ul li a{width: 100%; height: 100%; display: block; overflow: hidden; position: relative;}
+.nb-proc-promos ul li a b{width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000; background-color: rgba(0,0,0,.5); z-index: 2; display/*\**/: none \9; opacity: 0; -webkit-transition: opacity .3s ease-in-out; -moz-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out;}
+.nb-proc-promos ul li a b h2{font-size: 18px; color: #fff; padding-top: 180px;}
+.nb-proc-promos ul li a b p{font-size: 12px; color: #fff; padding-top: 5px;}
+.nb-proc-promos ul li a b:before{width: 60px; height: 60px; display: block; background: url(/web/20161206060331im_/http://static.nubia.cn/index/images/nb-pro-video-ico.png); background-size: 60px 60px; content: ''; z-index: 2; position: absolute; top: 50%; left: 50%; margin: -30px 0 0 -30px; background/*\**/: url(/web/20161206060331im_/http://static.nubia.cn/index/images/nb-pro-video-ico-s.png) \9;}
+.nb-proc-promos ul li a:hover b{display/*\**/: block \9; opacity: 1;}
+.nb-proc-promos ul li a:hover b:before{ -webkit-animation: pm-popup-ant 2s .5s ease-in-out infinite; -moz-animation: pm-popup-ant 2s .5s ease-in-out infinite; animation: pm-popup-ant 2s .5s ease-in-out infinite;}
+.nb-proc-promos ul li i{width: 300%; height: 250px; display: block; overflow: hidden; position: absolute; top: 0; left: 50%; margin-left: -150%; text-align: center; z-index: 1; background-position: center center; background-repeat: no-repeat; background-size: 638px 300px;}
+.nb-proc-promos ul li i img{height: 250px;}
+@-webkit-keyframes pm-popup-ant{
+    20%{ -webkit-transform: scale(.8); transform: scale(.8);}
+    40%{ -webkit-transform: scale(1.2); transform: scale(1.2);}
+    60%{ -webkit-transform: scale(.9); transform: scale(.9);}
+    80%{ -webkit-transform: scale(1); transform: scale(1);}
+    100%{ -webkit-transform: scale(1); transform: scale(1);}
+}
+@-moz-keyframes pm-popup-ant{
+    20%{ -moz-transform: scale(.8); transform: scale(.8);}
+    40%{ -moz-transform: scale(1.2); transform: scale(1.2);}
+    60%{ -moz-transform: scale(.9); transform: scale(.9);}
+    80%{ -moz-transform: scale(1); transform: scale(1);}
+    100%{ -moz-transform: scale(1); transform: scale(1);}
+}
+@keyframes pm-popup-ant{
+    20%{ -webkit-transform: scale(.8); -moz-transform: scale(.8); transform: scale(.8);}
+    40%{ -webkit-transform: scale(1.2); -moz-transform: scale(1.2); transform: scale(1.2);}
+    60%{ -webkit-transform: scale(.9); -moz-transform: scale(.9); transform: scale(.9);}
+    80%{ -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1);}
+    100%{ -webkit-transform: scale(1); -moz-transform: scale(1); transform: scale(1);}
+}
+
+#nb-pro-content .nb-proc-list{width: 1200px; margin: auto; padding-bottom: 100px;}
+.nb-proc-list dt{padding: 40px 0 30px; text-align: center;}
+.nb-proc-list dt h2{font-size: 28px; color: #333;}
+.nb-proc-list dt a{font-size: 12px; color: #e8340e; display: block; margin-top: 20px;}
+.nb-proc-list dd{width: 100%; position: relative;}
+.nb-proc-list dd ul{display: block;}
+.nb-proc-list dd li{background: #fff; overflow: hidden;}
+.nb-proc-list dd li a{display: block; position: relative;}
+.nb-proc-list dd li a .title{width: 100%; position: absolute; bottom: 30px; left: 0; text-align: center; z-index: 2;}
+.nb-proc-list dd li a .title h2{font-size: 18px; color: #333; -webkit-transition: color .3s ease-in-out; -moz-transition: color .3s ease-in-out; transition: color .3s ease-in-out;}
+.nb-proc-list dd li a .title p{font-size: 12px; color: #666; padding-top: 0; -webkit-transition: color .3s ease-in-out; -moz-transition: color .3s ease-in-out; transition: color .3s ease-in-out;}
+.nb-proc-list dd li a .title b{width: 30px; height: 30px; position: absolute; top: 50%; right: 60px; margin-top: -15px; background-position: 0 -120px;}
+.nb-proc-list dd li a:hover .title b{background-position: -30px -120px;}
+.nb-proc-list dd li a .title span{display: block; width: 106px; height: 30px; line-height: 30px; text-align: center; margin: auto; font-size: 12px; color: #333; border: #e4e4e4 1px solid; border-radius: 3px; margin-top: 15px; -webkit-transition: color .3s ease-in-out,border .3s ease-in-out; -moz-transition: color .3s ease-in-out,border .3s ease-in-out; transition: color .3s ease-in-out,border .3s ease-in-out;}
+.nb-proc-list dd li a:hover .title h2{color: #333;}
+.nb-proc-list dd li a:hover .title p{color: #333;}
+.nb-proc-list dd li a .title span:hover{color: #e8340e; border: #e8340e 1px solid; }
+.nb-proc-list dd.nb-pl-new{height: 1200px;}
+.nb-proc-list dd.nb-pl-new ul{height: 1200px;}
+.nb-proc-list dd.nb-pl-new li{position: absolute;}
+.nb-proc-list dd.nb-pl-new li a.pm-scale-ani .figure{-webkit-transition: -webkit-transform 1s ease;-moz-transition: -moz-transform 1s ease;transition: transform 1s ease;}
+.nb-proc-list dd.nb-pl-new li a.pm-scale-ani:hover .figure{-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-1{top: 0; left: 0;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-1 a{width: 1200px; height: 395px; position: relative;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-1 a .figure{position: relative; top: 80px; z-index: 1; -webkit-transform: translateX(-2%); -moz-transform: translateX(-2%); -ms-transform: translateX(-2%); transform: translateX(-2%); -webkit-transition: -webkit-transform 1s ease; -moz-transition: -moz-transform 1s ease; transition: transform 1s ease;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-1 a:hover .figure{-webkit-transform: translateX(0%);-moz-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-1 a .title{width: 300px; position: absolute; top: 150px; right: 50px; left: auto; text-align: center;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-2{bottom: 0; left: 0;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-2 a{width: 395px; height: 795px;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-3{top: 404px; right: 0;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-3 a{width: 795px; height: 390px;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-3 a .figure{-webkit-transform: translateX(4%); -moz-transform: translateX(4%); -ms-transform: translateX(4%); transform: translateX(4%); -webkit-transition: -webkit-transform 1s ease; -moz-transition: -moz-transform 1s ease; transition: transform 1s ease;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-3 a:hover .figure{-webkit-transform: translateX(0%);-moz-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-4{bottom: 0; left: 405px;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-4 a{width: 390px; height: 395px;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-5{bottom: 0; right: 0;}
+.nb-proc-list dd.nb-pl-new li.nb-pl-li-5 a{width: 395px; height: 395px;}
+.nb-proc-list dd.nb-pl-accessories{width: 100%; height: 300px;}
+.nb-proc-list dd.nb-pl-accessories ul{width: 100%; height: 300px;}
+.nb-proc-list dd.nb-pl-accessories li{float: left; margin-right: 10px;}
+.nb-proc-list dd.nb-pl-accessories li a.pm-scale-ani .figure{-webkit-transition: -webkit-transform 1s ease; -moz-transition: -moz-transform 1s ease; transition: transform 1s ease;}
+.nb-proc-list dd.nb-pl-accessories li a.pm-scale-ani:hover .figure{-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+.nb-proc-list dd.nb-pl-accessories li a .title p{font-size: 12px; color: #666; padding-top: 0; -webkit-transition: color .3s ease-in-out; -moz-transition: color .3s ease-in-out; transition: color .3s ease-in-out;/* width: 140px; margin-left: 60px;*/ text-align: center; display: block; padding: 0;}
+.nb-proc-list dd.nb-pl-accessories li.nb-pl-li-4{margin-right: 0;}
+.nb-proc-list dd.nb-pl-accessories li.nb-pl-li-1 a{width: 295; height: 300px;}
+.nb-proc-list dd.nb-pl-accessories li.nb-pl-li-2 a{width: 290; height: 300px;}
+.nb-proc-list dd.nb-pl-accessories li.nb-pl-li-3 a{width: 290; height: 300px;}
+.nb-proc-list dd.nb-pl-accessories li.nb-pl-li-4 a{width: 295; height: 300px; margin-right: 0;}
+.nb-proc-list dd.nb-pl-accessories li .title{ bottom: 40px;}
+
+.nb-pro-foot{width: 100%; position: relative; background: #fff; padding-top: 40px;}
+.nb-pro-foot .nb-pf-passage{width: 1200px;margin: auto; padding-bottom: 50px;}
+.nb-pro-foot .nb-pf-passage li{width: 200px; padding: 0 50px; float: left;}
+.nb-pro-foot .nb-pf-passage li{width: 200px; padding: 0 50px; float: left; text-align: center;}
+.nb-pro-foot .nb-pf-passage li b{width: 60px; height: 60px; margin: auto;}
+.nb-pro-foot .nb-pf-passage li h2{padding-top: 30px; font-size: 24px; color: #333;}
+.nb-pro-foot .nb-pf-passage li p{height: 95px; padding-top: 15px; font-size: 14px; color: #999;}
+.nb-pro-foot .nb-pf-passage li a{display: block; font-size: 12px; color: #e8340e;}
+.nb-pro-foot .nb-pf-passage li span{display: block; font-size: 12px; color: #e8340e;}
+.nb-pro-foot .nb-pf-passage li strong{display: block; font-size: 12px; color: #666; font-weight: normal;}
+.nb-pro-foot .nb-pf-mblist{width: 1200px;margin: auto; padding-top: 20px; border-top: #f1f1f1 1px solid; font-size: 12px;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-crumbs{width: 1000px;margin: auto;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-crumbs b{display: inline-block; vertical-align: middle; padding-right: 5px; position: relative; top: -1px;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all{padding-top: 20px;width: 1000px; margin: auto;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all dl{float: left; width: 200px;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all dl dt{color: #333; height: 16px; padding-bottom: 5px;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all dl dd{line-height: 2em;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all dl dd a{color: #999;}
+.nb-pro-foot .nb-pf-mblist .nb-pf-mblist-all dl dd a:hover{color: #e8340e;}
+
+
+
+
+
+
+
+
+
+
+
+/*accessories*/
+.nb-accessories{padding-top: 60px;}
+.nb-accessories .nb-pro-nav{position: absolute; top: 60px; left: 0; z-index: 2;padding-top: 15px;}
+.nb-accessories .nb-pro-nav ul{width: 900px;}
+.nb-accessories .nb-pro-nav ul li{width: 150px;}
+
+/*--*/
+.high-access-z9max{background-color: #fb7577;}
+.high-access-z9max a .figure{position: absolute; top: 0; right: 50px; width: 480px; height: 480px;}
+.high-access-z9max a .title{position: absolute; top: 130px; left: 200px; width: 450px; height: 265px;}
+/*--*/
+
+.nb-accessories .nb-access-promos{padding-top: 50px; width: 1200px; margin: auto; margin-bottom: 50px;}
+.nb-accessories .nb-access-link{background-color: #fff; text-align: center;}
+.nb-access-link a{display: block;}
+.nb-access-link a .figure{z-index: 1; position: relative; -webkit-transition: -webkit-transform 1s ease; -moz-transition: -moz-transform 1s ease; transition: transform 1s ease;}
+.nb-access-link a:hover .figure{-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-ms-transform: scale(1.05);transform: scale(1.05);}
+.nb-access-link a .title{width: 100%;  position: absolute;  bottom: 40px;  left: 0;  text-align: center;  z-index: 2;}
+.nb-access-link a h2{color: #333; font-size: 18px;}
+.nb-access-link a p{color: #666;}
+.nb-access-link a span{display: inline-block;  width: 106px; height: 30px; line-height: 30px; overflow: hidden; color: #333; border: #e4e4e4 1px solid; border-radius: 3px; margin-top: 15px; -webkit-transition: color .3s ease-in-out,border .3s ease-in-out;-moz-transition: color .3s ease-in-out,border .3s ease-in-out;transition: color .3s ease-in-out,border .3s ease-in-out;}
+.nb-access-link a:hover span{border-color: #e8340e; color: #e8340e;}
+
+.nb-access-promos h2{font-size: 18px;}
+.nb-access-promos p{font-size: 12px;}
+.nb-access-promos .nb-access-pro-a{width: 790px; height: 400px; float: left; overflow: hidden; position: relative;}
+.nb-access-promos .nb-access-pro-a .figure{width: 790px; height: 270px; overflow: hidden;}
+.nb-access-promos .nb-access-pro-b{width: 400px; height: 400px; float: right; overflow: hidden; position: relative;}
+.nb-access-promos .nb-access-pro-b .figure{width: 400px; height: 270px; overflow: hidden;}
+
+.nb-accessories .nb-access-all{background-color: #fff; overflow: hidden; width: 1200px; margin: auto; color: #cccccc;}
+.nb-access-all ul{display: block; width: 90%; margin: auto;}
+.nb-access-all ul li{display: block; padding: 15px 0; border-bottom: 1px #f1f1f1 solid;}
+.nb-access-all ul li:last-child{border-bottom: none;}
+.nb-access-all ul li a{display: inline-block; padding: 0 10px; color: #999899; font-size: 14px; -webkit-transition: color .3s ease-in-out; -moz-transition: color .3s ease-in-out; transition: color .3s ease-in-out;}
+.nb-access-all ul li a:hover,.nb-access-all ul li a.current{color: #e8340e;}
+
+.nb-accessories .nb-access-prolist{position: relative; width: 1200px; margin: auto; overflow: hidden; margin-bottom: 100px;}
+.nb-access-prolist ul li{float: left; width: 292px; height: 300px; position: relative; margin-left: 10px; margin-top: 10px; overflow: hidden;}
+.nb-access-prolist ul li.clear-marginleft{margin-left: 0; width: 294px;}
+.nb-access-prolist ul li .figure{width: 100%; height: 240px;}
+.nb-access-prolist ul li a .title p{font-size: 12px; color: #666; padding-top: 0; -webkit-transition: color .3s ease-in-out; -moz-transition: color .3s ease-in-out; transition: color .3s ease-in-out; display: block; padding: 0;}
+.nb-access-prolist ul li a .title b{width: 30px; height: 30px; position: absolute; top: 50%; right: 60px; margin-top: -15px; background-position: 0 -120px;}
+.nb-access-prolist ul li a:hover .title b{background-position: -30px -120px;}
+
+.nb-accessories .nb-access-prolist .nb-access-link a:hover p{color: #e8340e;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 06:03:31 Dec 06, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:42:57 Aug 09, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 139.42 (3)
+  esindex: 0.022
+  captures_list: 154.762
+  CDXLines.iter: 10.582 (3)
+  PetaboxLoader3.datanode: 149.582 (4)
+  exclusion.robots: 0.232
+  exclusion.robots.policy: 0.219
+  RedisCDXSource: 1.672
+  PetaboxLoader3.resolve: 80.434
+  load_resource: 106.477
+*/

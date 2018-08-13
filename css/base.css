@@ -1,0 +1,30 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, form, input,textarea,p,blockquote, table, tr, th, td { margin: 0;  padding: 0;  border: 0;}
+table{border-collapse:collapse; border-spacing:0;}
+img { border: 0; vertical-align: top; }
+address,caption,cite,code,dfn,em,strong,th,var{ font-style:normal; font-weight:normal;}
+ol,ul,dl {list-style:none;}
+input,textarea{border: 0; outline: 0; -webkit-appearance: none; resize: none;}
+h1,h2,h3,h4,h5,h6,b{font-size:100%; font-weight:normal;}
+.clearfix:after{content: ""; display: block; clear: both;}
+a {text-decoration: none; color: #000; cursor: pointer;}
+i{font-style: normal}
+.fl{ float:left;}
+.fr{ float:right;}
+.hide { display: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+body{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000;
+    font-family: "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,Verdana,Helvetica,sans-serif;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
